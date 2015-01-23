@@ -1,6 +1,6 @@
 # functions for computation matrix inverse and restoration from cache 
 
-makecachedmatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
     x <<- y
@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) {
 
 # sample run results
 # x <- matrix(c(12,52,36,54,85,74,69,52,69,54,21,35,652,458,745,856), 4,4)
-# z <- makecachedmatrix(x)
+# z <- makeCacheMatrix(x)
 # cacheSolve(z)
               [,1]         [,2]          [,3]         [,4]
 [1,] -0.0171815952  0.019343879 -4.773509e-03  0.006891551
